@@ -1,5 +1,5 @@
 ### Hi there 👋
-
+hola a todos, mi nombre es Jesús, me gustaría utilizar este repositorio para ir anotando todo lo que voy aprendiendo en este maravillo mundo de la programación
 <!--
 **ajmd97/ajmd97** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 
