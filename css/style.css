@@ -1,0 +1,27 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --fsize-h1: 2rem;
+    --fsize-h2: 1.6rem;
+    --fsize-p: 1.2rem;
+    --color-1: #FF9551;
+    --color-2: #fcad71;
+    --color-3: #FFD8A9;
+    --color-4: #B9FFF8;
+    --color-5: #277BC0;
+}
+
+html {
+    font-size: 62.5%;    
+    font-family: "Lucida Sans", sans-serif;
+    background: var(--color-3);
+  }
+
+.c1 {background: var(--color-1); min-height: 10vh;border-style: solid; border-color: var(--color-5);}
+.c2 {background: var(--color-2); min-height: 10vh;}
+.c3 {background: var(--color-3); min-height: 10vh;}
+.c4 {background: var(--color-4); min-height: 10vh; border-style: solid; border-color: var(--color-5);}

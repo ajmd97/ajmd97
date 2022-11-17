@@ -13,5 +13,9 @@
         <h1>Hello World</h1>
         <p>Mi nombre es Jesús</p>
         <p>Me gustaría utilizar este repositorio para ir poniendo todo lo que voy aprendiendo de este maravilloso mundo del desarrollo web y de aplicaciones.</p>
+        <div class="c1">hola - prueba de colores</div>
+        <div class="c2">hola - prueba de colores</div>
+        <div class="c3">hola - prueba de colores</div>
+        <div class="c4">hola - prueba de colores</div>
     </body>
 </html>
