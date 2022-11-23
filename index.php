@@ -7,15 +7,40 @@
     <link rel="stylesheet" href="./css/style.css">
     <link rel="icon" type="image/png" href="./images/favicon.png">
     <link rel="shortcut icon" href="./images/favicon.png" type="image/png">
-    <title>RECURSOS DE PROGRAMACION</title>
+    <title>AJMD97</title>
 </head>
-    <body>
-        <h1>Hello World</h1>
-        <p>Mi nombre es Jesús</p>
-        <p>Me gustaría utilizar este repositorio para ir poniendo todo lo que voy aprendiendo de este maravilloso mundo del desarrollo web y de aplicaciones.</p>
-        <div class="c1">hola - prueba de colores</div>
-        <div class="c2">hola - prueba de colores</div>
-        <div class="c3">hola - prueba de colores</div>
-        <div class="c4">hola - prueba de colores</div>
-    </body>
+<body>
+    <?php include "./header.php";?>
+    <div class="container">
+        <div class="article">
+        <h1 class="c_ph_100 c_tb_100 c_sc_100 c_bsc_100">Hello World </h1>
+        <h1 class="c_ph_100">div phone</h1>
+        <h1 class="c_tb_100">div tablet</h1>
+        <h1 class="c_sc_100">div screen</h1>
+        <h1 class="c_bsc_100">div big screen</h1>
+
+            
+        <div class="c_ph_100 c_tb_50 c_sc_33 c_bsc_33 article">
+            <p>hola - prueba de colores 1</p>
+            <p>Mi nombre es Jesús</p>
+            <p>Me gustaría utilizar este repositorio para ir poniendo todo lo que voy aprendiendo de este maravilloso mundo del desarrollo web y de aplicaciones.</p>
+        </div>
+            
+        <div class="c_ph_100 c_tb_50 c_sc_33 c_bsc_33 article">hola - prueba de colores 2</div>
+        <div class="c_ph_100 c_tb_100 c_sc_33 c_bsc_33 article">hola - prueba de colores 3</div>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Assumenda qui tenetur consequuntur quibusdam dicta omnis incidunt quasi provident? In nostrum rem nobis. Veritatis a exercitationem repellendus recusandae ratione nam consequatur.</p>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Assumenda qui tenetur consequuntur quibusdam dicta omnis incidunt quasi provident? In nostrum rem nobis. Veritatis a exercitationem repellendus recusandae ratione nam consequatur.</p>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Assumenda qui tenetur consequuntur quibusdam dicta omnis incidunt quasi provident? In nostrum rem nobis. Veritatis a exercitationem repellendus recusandae ratione nam consequatur.</p>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Assumenda qui tenetur consequuntur quibusdam dicta omnis incidunt quasi provident? In nostrum rem nobis. Veritatis a exercitationem repellendus recusandae ratione nam consequatur.</p>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Assumenda qui tenetur consequuntur quibusdam dicta omnis incidunt quasi provident? In nostrum rem nobis. Veritatis a exercitationem repellendus recusandae ratione nam consequatur.</p>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Assumenda qui tenetur consequuntur quibusdam dicta omnis incidunt quasi provident? In nostrum rem nobis. Veritatis a exercitationem repellendus recusandae ratione nam consequatur.</p>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Assumenda qui tenetur consequuntur quibusdam dicta omnis incidunt quasi provident? In nostrum rem nobis. Veritatis a exercitationem repellendus recusandae ratione nam consequatur.</p>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Assumenda qui tenetur consequuntur quibusdam dicta omnis incidunt quasi provident? In nostrum rem nobis. Veritatis a exercitationem repellendus recusandae ratione nam consequatur.</p>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Assumenda qui tenetur consequuntur quibusdam dicta omnis incidunt quasi provident? In nostrum rem nobis. Veritatis a exercitationem repellendus recusandae ratione nam consequatur.</p>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Assumenda qui tenetur consequuntur quibusdam dicta omnis incidunt quasi provident? In nostrum rem nobis. Veritatis a exercitationem repellendus recusandae ratione nam consequatur.</p>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Assumenda qui tenetur consequuntur quibusdam dicta omnis incidunt quasi provident? In nostrum rem nobis. Veritatis a exercitationem repellendus recusandae ratione nam consequatur.</p>
+        
+    </div>
+    </div>
+</body>
 </html>
