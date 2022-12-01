@@ -1,15 +1,15 @@
 <header>
     <div class="main-header">
         <button id="button-menu" class="button-menu">
-        <img src="./images/logo-transp.png" width="35" height="auto">
+        <img src="./images/logo_transp.png" width="35" height="auto">
         </button>
         <nav id="nav" class="main-nav">
             <div class="nav-links">
                 <a class="link-item" href="index.php">home</a>
                 <a class="link-item" href="curso_html.php">Curso HTML y CSS</a>
-                <a class="link-item" href="#">Recursos de programación</a>
-                <a class="link-item" href="#">Link4</a>
-                <a class="link-item" href="#">Link5</a>
+                <a class="link-item" href="recursos_programacion.php">Recursos de programación</a>
+                <a class="link-item" href="atajos_vsc.php">Atajos VSC</a>
+                <a class="link-item" href="draft.php">Plantilla</a>
             </div>
         </nav>
         <script>

@@ -1,12 +1,13 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
+    <!-- <meta http-equiv = "refresh" content = "5" > -->
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/style.css">
-    <link rel="icon" type="image/png" href="./images/favicon.png">
-    <link rel="shortcut icon" href="./images/favicon.png" type="image/png">
+    <link rel="stylesheet" href="./css/prism.css">
+    <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon">
     <title>Curso Definitivo de HTML y CSS - Platzi</title>
     <script type="text/javascript">
         function toggle(obj) {
@@ -15,11 +16,12 @@
         else obj.style.display = "block";
         }
     </script>
+    <script src="prism.js"></script>
 </head>
 <body>
 <?php include "./header.php";?>
-<div class="container">
-<div class="c_ph_100 c_tb_100 c_sc_75 c_bsc_75 article">
+<div id="TituloPagina" class="container">
+<div class="c_ph_100 c_tb_100 c_sc_75 c_bsc_75 curso">
     <h1>Curso Definitivo de HTML y CSS - Platzi</h1>
     <h2><a href="javascript: void(0);" onClick="toggle('menu100')">1. Web Developer Fundamentals</h2></a>
         <span id="menu100" style="display:none;">
@@ -135,7 +137,7 @@
                 </span>    
             <h3><a href="javascript: void(0);" onClick="toggle('menu240')">2.4. Páginas estáticas vs dinámicas</h3></a>
                 <span id="menu240" style="display:none;">
-                    <img class="imagen" src="./images/paginas.png">
+                    <img class="cursoHC-imagen" src="./images/paginas.png">
                     <p>Los websites estáticos son aquellos que por lo general no cambiar. Se les conoce también como landing page o page information.</p>
                     <ul>
                         <li>No están conectadas a una base de datos</li>
@@ -180,27 +182,27 @@
                         <li>Fuentes</li>
                         <li>APIs</li>
                     </ul>
-                    <div class="code">
-                        &#x3C;!DOCTYPE html&#x3E;<br>               
-                        &#x3C;!--Le decimos al navegador que este archivo es del tipo html:5--&#x3E;<br>
-                        &#x3C;html lang=&#x22;es&#x22;&#x3E;<br>
-                        &#x3C;!--Es la etiqueta &#x22;padre&#x22; donde vivir&#xE1; nuestro proyecto. El atributo lang establece el idioma del sitio web. Debemos usarlo para que el navegador pueda traducir nuestra p&#xE1;gina--&#x3E; <br>
-                        <br>
+                    <pre class="language-html line-numbers match-braces" data-start="1"><code> 
+                        &#x3C;!DOCTYPE html&#x3E;
+                        &#x3C;!--Le decimos al navegador que este archivo es del tipo html:5--&#x3E;
+                        &#x3C;html lang=&#x22;es&#x22;&#x3E;
+                        &#x3C;!--Es la etiqueta &#x22;padre&#x22; donde vivir&#xE1; nuestro proyecto. El atributo lang establece el idioma del sitio web. Debemos usarlo para que el navegador pueda traducir nuestra p&#xE1;gina--&#x3E;
                         &#x3C;head&#x3E;<br>
-                            &#x3C;meta charset=&#x22;UTF-8&#x22; /&#x3E;<br>
-                            &#x3C;!--Este atributo nos ayuda a la hora de incluir caracteres especiales y emojis en nuestro proyecto--&#x3E;<br>
-                            &#x3C;meta name=&#x22;description&#x22;content=&#x22;Esta p&#xE1;gina te mostrar&#xE1; fotos de gatos&#x22; /&#x3E;<br>
-                            &#x3C;!--Muestra una descripci&#xF3;n de nuestro sitio en los buscadores--&#x3E;<br>
-                            &#x3C;meta name=&#x22;robots&#x22;content=&#x22;index,follow&#x22; /&#x3E;<br>
-                            &#x3C;!--Le dice a los robots de los navegadores que rastreen nuestra p&#xE1;gina y la muestran en las b&#xFA;squedas--&#x3E;<br>
-                            &#x3C;title&#x3E;Mi p&#xE1;gina &#x3C;/title&#x3E;<br>
-                            &#x3C;!--T&#xED;tulo de nuestra p&#xE1;gina, no confundir con los h2-H6. Este titulo es el que ves en la pesta&#xF1;a del navegador--&#x3E;<br>
-                            &#x3C;meta name=&#x22;viewport&#x22;content=&#x22;width=device-width, initial-scale=1.0&#x22; /&#x3E;<br>
-                            &#x3C;!--Nos ayuda a trabajar en proyectos reponsive--&#x3E;<br>
-                            &#x3C;link rel=&#x22;stylesheet&#x22;href=&#x22;./css/style.css&#x22;&#x3E;<br>
-                            &#x3C;!--Linkea/Enlaza archivos de estilos u otros archivos que necesitemos en nuestro proyecto--&#x3E;<br>
-                        &#x3C;/head&#x3E;<br>
-                    </div>
+                        &#x3C;meta charset=&#x22;UTF-8&#x22; /&#x3E;<br>
+                        &#x3C;!--Este atributo nos ayuda a la hora de incluir caracteres especiales y emojis en nuestro proyecto--&#x3E;<br>
+                        &#x3C;meta name=&#x22;description&#x22;content=&#x22;Esta p&#xE1;gina te mostrar&#xE1; fotos de gatos&#x22; /&#x3E;<br>
+                        &#x3C;!--Muestra una descripci&#xF3;n de nuestro sitio en los buscadores--&#x3E;<br>
+                        &#x3C;meta name=&#x22;robots&#x22;content=&#x22;index,follow&#x22; /&#x3E;<br>
+                        &#x3C;!--Le dice a los robots de los navegadores que rastreen nuestra p&#xE1;gina y la muestran en las b&#xFA;squedas--&#x3E;<br>
+                        &#x3C;title&#x3E;Mi p&#xE1;gina &#x3C;/title&#x3E;<br>
+                        &#x3C;!--T&#xED;tulo de nuestra p&#xE1;gina, no confundir con los h2-H6. Este titulo es el que ves en la pesta&#xF1;a del navegador--&#x3E;<br>
+                        &#x3C;meta name=&#x22;viewport&#x22;content=&#x22;width=device-width, initial-scale=1.0&#x22; /&#x3E;<br>
+                        &#x3C;!--Nos ayuda a trabajar en proyectos reponsive--&#x3E;<br>
+                        &#x3C;link rel=&#x22;stylesheet&#x22;href=&#x22;./css/style.css&#x22;&#x3E;<br>
+                        &#x3C;!--Linkea/Enlaza archivos de estilos u otros archivos que necesitemos en nuestro proyecto--&#x3E;<br>
+                        &#x3C;/head&#x3E;
+                    </code></pre>
+
                     <p>El usuario solo verá lo que está dentro del body.</p>
                     <p>* El primer archivo siempre debe llamarse <b>index.html</b> porque este es el primer archivo que buscan los servidores a la hora de cargar los archivos de un sitio web.</p>
                     <p>* Existen etiquetas que se cierran y otras que no. Como por ejemplo: img</p>
@@ -211,7 +213,7 @@
                 </span>
             <h3><a href="javascript: void(0);" onClick="toggle('menu340')">3.4. Anatomía de una etiqueta HTML</h3></a>
                 <span id="menu340" style="display:none;">
-                    <img src="./images/anatomia-html.png">
+                    <img class="cursoHC-imagen" src="./images/anatomia-html.png">
                 </span>
         </span>            
     <h2><a href="javascript: void(0);" onClick="toggle('menu400')">4. Etiquetas multimedia</h2></a>
@@ -219,7 +221,7 @@
         <p>Son el tipo de etiquetas que usaremos para insertar imágenes y vídeos.</p>
         <h3><a href="javascript: void(0);" onClick="toggle('menu410')">4.1. Tipos de imágenes</h3></a>
             <span id="menu410" style="display:none;">
-                <img class="imagen" src="./images/tipos-imagenes.png">
+                <img class="cursoHC-imagen" src="./images/tipos-imagenes.png">
                 <p>Existen 2 tipos de imágenes: <b>Con pérdida</b> (Lossy) y <b>sin pérdida</b> (Lossless) y esto dependerá del formato que manejemos.</p>
                 <ul>
                     <li><b>Lossy:</b> Este tipo de imágenes se refiere a imágenes pequeñas y que pierden calidad (comparadas con las lossless). Nos ayudan a mejorar el tiempo de carga de nuestro website pero perdemos calidad. Algunos de estos formatos son:</li>
@@ -255,24 +257,24 @@
             </span>
         <h3><a href="javascript: void(0);" onClick="toggle('menu440')">4.4. Etiqueta video</h3></a>
             <span id="menu440" style="display:none;">
-                <div class="code">
-                    |< section> </br>
-                    |    < video controls preload="auto"> </br>
-                    |    |    < source src="./video.m4v#t=10,60" /> </br>
-                    |    |    < source src="./video.mp4#t=10,60" /> </br>
-                    |    |    < source src="./video.gif" /> </br>
-                    |    < /video> </br>
-                    |< /section> </br>
-                </div>
-                <p>Nos permite subir un video mediante la misma forma que una imagen, mediante el atributo src</p>
-                <p><b>control:</b> Aparecen los controles para manipular el video. No recibe valores, es un parámetro vacío.</p>
-                <p><b>preload:</b> Ayuda a que el video se empiece a descargar una vez se abre el navegador en esa página. A descargar, no a reproducirse automáticamente. Reproducirse automáticamente es una mala práctica </p>
-                <p><b>source:</b> Va dentro de la etiqueta video y se usa para especificar varias rutas en caso de que el navegador no entienda algún formato de vídeo. Se pueden poner varios formatos y el navegador utilizará el que más le convenga. Para usarlo se elimina el atributo src del video y se le pone a las etiquetas source. Al video se le dejan los demás atributos.</p>
-                <p>Si queremos que el video inicie y termine en un segundo específico, debemos usar unos atributos dentro del src:</p>
-                <ul>
-                    <li>#t= --> Indica el tiempo en el cual empezará y terminará</li>
-                    <li>10,60 --> Son los valores en segundos. Donde 10 (izquierda) es donde inicia y 60 (derecha) donde finaliza. Deben ir separados solo por una coma sin espacio</li>
-                </ul>
+            <pre class="language-html line-numbers match-braces" data-start="1"><code> 
+            &#x3C;section&#x3E;
+                &#x3C;video controls preload=&#x22;auto&#x22;&#x3E;
+                    &#x3C;source src=&#x22;./video.m4v#t=10,60&#x22; /&#x3E;
+                    &#x3C;source src=&#x22;./video.mp4#t=10,60&#x22; /&#x3E;
+                    &#x3C;source src=&#x22;./video.gif&#x22; /&#x3E;
+                &#x3C;/video&#x3E;
+            &#x3C;/section&#x3E;
+            </code></pre>          
+            <p>Nos permite subir un video mediante la misma forma que una imagen, mediante el atributo src</p>
+            <p><b>control:</b> Aparecen los controles para manipular el video. No recibe valores, es un parámetro vacío.</p>
+            <p><b>preload:</b> Ayuda a que el video se empiece a descargar una vez se abre el navegador en esa página. A descargar, no a reproducirse automáticamente. Reproducirse automáticamente es una mala práctica </p>
+            <p><b>source:</b> Va dentro de la etiqueta video y se usa para especificar varias rutas en caso de que el navegador no entienda algún formato de vídeo. Se pueden poner varios formatos y el navegador utilizará el que más le convenga. Para usarlo se elimina el atributo src del video y se le pone a las etiquetas source. Al video se le dejan los demás atributos.</p>
+            <p>Si queremos que el video inicie y termine en un segundo específico, debemos usar unos atributos dentro del src:</p>
+            <ul>
+                <li>#t= --> Indica el tiempo en el cual empezará y terminará</li>
+                <li>10,60 --> Son los valores en segundos. Donde 10 (izquierda) es donde inicia y 60 (derecha) donde finaliza. Deben ir separados solo por una coma sin espacio</li>
+            </ul>
             </span>
     </span>
     <h2><a href="javascript: void(0);" onClick="toggle('menu500')">5. Formularios</h2></a>
@@ -280,34 +282,31 @@
             <h3><a href="javascript: void(0);" onClick="toggle('menu510')">5.1. Etiqueta form e input</h3></a>
                 <span id="menu510" style="display:none;">
                     <p>Los formularios son la forma en la cual podemos empezar a generar interacción con los usuarios. Debemos generar buenos formularios para los usuarios, deben ser cortos, fáciles de usar y directos.</p>
-                    <div class="code">
-                        <code>
-                        |< !-- Como no hacerlo --> </br>
-                        |    < div> </br>
-                        |    |    < input type="text" /> </br>
-                        |    |    < input type="text" /> </br>
-                        |    |    < input type="text" /> </br>
-                        |    |    < input type="text" /> </br>
-                        |< /div> </br>
-                        |</br>
-                        |< !-- Como si hacerlo --> </br>
-                        |</br>
-                        |    < form action=""> </br>
-                        |    |    < label for="nombre"> </br>
-                        |    |    |    < span> Cúal es tu nombre? < /span> </br>
-                        |    |    |    < input type="text" id="nombre" placeholder="John Cardenas" /> </br>
-                        |    |    < /label> </br>
-                        |    |    < label for="inicio-platzi"> </br>
-                        |    |    |    < span> Qué día comenzaste en Platzi? < /span> </br>
-                        |    |    |    < input type="date" id="inicio-platzi" /> </br>
-                        |    |    < /label> </br>
-                        |    |    < label for="horario"> </br>
-                        |    |    |    < span> En qué horario estudias? < /span> </br>
-                        |    |    |    < input type="time" id="horario" /> </br>
-                        |    |    < /label> </br>
-                        |    < /form> </br>
-                    </code>
-                    </div>
+                    <pre class="language-html line-numbers match-braces" data-start="1"><code> 
+                    &#x3C;!-- Como no hacerlo --&#x3E;
+                    &#x3C;div&#x3E;
+                        &#x3C;input type=&#x22;text&#x22;/&#x3E;
+                        &#x3C;input type=&#x22;text&#x22;/&#x3E;
+                        &#x3C;input type=&#x22;text&#x22;/&#x3E;
+                        &#x3C;input type=&#x22;text&#x22;/&#x3E;
+                    &#x3C;/div&#x3E;                        
+                    &#x3C;!-- Como si hacerlo --&#x3E;
+                    &#x3C;form action=&#x22;&#x22;&#x3E;
+                    &#x3C;label for=&#x22;nombre&#x22;&#x3E;
+                        &#x3C;span&#x3E; Cu&#xE1;l es tu nombre? &#x3C;/span&#x3E;
+                        &#x3C;input type=&#x22;text&#x22; id=&#x22;nombre&#x22; placeholder=&#x22;John Cardenas&#x22; /&#x3E;
+                    &#x3C;/label&#x3E;
+                    &#x3C;label for=&#x22;inicio-platzi&#x22;&#x3E;
+                        &#x3C;span&#x3E; Qu&#xE9; d&#xED;a comenzaste en Platzi? &#x3C;/span&#x3E;
+                        &#x3C;input type=&#x22;date&#x22; id=&#x22;inicio-platzi&#x22; /&#x3E;
+                    &#x3C;/label&#x3E;
+                    &#x3C;label for=&#x22;horario&#x22;&#x3E;
+                        &#x3C;span&#x3E; En qu&#xE9; horario estudias? &#x3C;/span&#x3E;
+                        &#x3C;input type=&#x22;time&#x22; id=&#x22;horario&#x22; /&#x3E;
+                    &#x3C;/label&#x3E;
+                    &#x3C;/form&#x3E; 
+                    </code></pre>       
+
                     <p><b>form: </b>nos permite decirle al navegador que lo que usaremos es un formulario y que el usuario va a interactuar con el. Es una etiqueta contenedora.</p>
                     <p><b>action: </b>es la URL o base de datos a donde se va a enviar la información.</p>
                     <p><b>label: </b>es una etiqueta contenedora de <b>input.</b> Recibe un atributo importante llamado <b>for</b> y el cual debe ser el mismo que el <b>id</b> del <b>input.</b></p>
@@ -318,100 +317,90 @@
             <h3><a href="javascript: void(0);" onClick="toggle('menu520')">5.2. Calendar, auto complete y require</h3></a>
                 <span id="menu520" style="display:none;">
                     <p>El atributo <b>name</b> de los inputs nos ayuda en el caso que queramos enviar la información a alguna URL. Debe ser igual que el atributo <b>for</b> de <b>label</b> y por lo tanto que el <b>id</b> del <b>input.</b></p>
-                    <div class="code">
-                        <code>
-                        |< form action=""> </br>
-                        |    < label for="nombre"> </br>
-                        |    |    < span> Cúal es tu nombre? < /span> </br>
-                        |    |    < input  </br>
-                        |    |    |    type="text" </br>
-                        |    |    |    name="nombre" </br>
-                        |    |    |    id="nombre" </br>
-                        |    |    |    autocomplete="name" </br>
-                        |    |    |    required </br>
-                        |    |    /> </br>
-                        |    < /label> </br>
-                        |    < label for="correo"> </br>
-                        |    |    < span> Cúal es tu correo? < /span> </br>
-                        |    |    < input  </br>
-                        |    |    |    type="email" </br>
-                        |    |    |    name="correo" </br>
-                        |    |    |    id="correo" </br>
-                        |    |    |    autocomplete="email" </br>
-                        |    |    |    required </br>
-                        |    |    /> </br>
-                        |    < /label> </br>
-                        |    < label for="pais"> </br>
-                        |    |    < span> En qué país vives? < /span> </br>
-                        |    |    < input  </br>
-                        |    |    |    type="text" </br>
-                        |    |    |    name="pais" </br>
-                        |    |    |    id="pais" </br>
-                        |    |    |    autocomplete="country" </br>
-                        |    |    |    required </br>
-                        |    |    /> </br>
-                        |    < /label> </br>
-                        |    < label for="cp"> </br>
-                        |    |    < span> Cúal es tu código postal? < /span> </br>
-                        |    |    < input  </br>
-                        |    |    |    type="text" </br>
-                        |    |    |    name="cp" </br>
-                        |    |    |    id="cp" </br>
-                        |    |    |    autocomplete="postal-code" </br>
-                        |    |    |    required </br>
-                        |    |    /> </br>
-                        |    < /label> </br>
-                        |    < input type=""submit" /> </br>
-                        |< /form> </br>
-                    </code>
-                    </div>
+                    <pre class="language-html line-numbers match-braces" data-start="1"><code> 
+                    &#x3C;form action=&#x22;&#x22;&#x3E;
+                    &#x3C;label for=&#x22;nombre&#x22;&#x3E;
+                    &#x3C;span&#x3E; C&#xFA;al es tu nombre? &#x3C;/span&#x3E;
+                    &#x3C;input 
+                        type=&#x22;text&#x22;
+                        name=&#x22;nombre&#x22;
+                        id=&#x22;nombre&#x22;
+                        autocomplete=&#x22;name&#x22;
+                        required
+                        /&#x3E;
+                    &#x3C;/label&#x3E;
+                    &#x3C;label for=&#x22;correo&#x22;&#x3E;
+                    &#x3C;span&#x3E; C&#xFA;al es tu correo? &#x3C; /span&#x3E;
+                    &#x3C;input 
+                        type=&#x22;email&#x22;
+                        name=&#x22;correo&#x22;
+                        id=&#x22;correo&#x22;
+                        autocomplete=&#x22;email&#x22;
+                        required
+                        /&#x3E;
+                    &#x3C;/label&#x3E;
+                    &#x3C;label for=&#x22;pais&#x22;&#x3E;
+                    &#x3C;span&#x3E; En qu&#xE9; pa&#xED;s vives? &#x3C; /span&#x3E;
+                    &#x3C;input 
+                        type=&#x22;text&#x22;
+                        name=&#x22;pais&#x22;
+                        id=&#x22;pais&#x22;
+                        autocomplete=&#x22;country&#x22;
+                        required
+                        /&#x3E;
+                    &#x3C;/label&#x3E;
+                    &#x3C;label for=&#x22;cp&#x22;&#x3E;
+                    &#x3C;span&#x3E; C&#xFA;al es tu c&#xF3;digo postal? &#x3C; /span&#x3E;
+                    &#x3C;input 
+                        type=&#x22;text&#x22;
+                        name=&#x22;cp&#x22;
+                        id=&#x22;cp&#x22;
+                        autocomplete=&#x22;postal-code&#x22;
+                        required
+                        /&#x3E;
+                    &#x3C;/label&#x3E;
+                    &#x3C;input type=&#x22;submit&#x22; /&#x3E;
+                    &#x3C;/form&#x3E;
+                    </code></pre>
                     <p><b>autocomplete:</b> completa el input con los datos que tenga guardado el navegador del usuario. Recibe valores dependiendo de que busquemos autocompletar: name, email, address...</p>
                     <p><b>require:</b> le indica al usuario que debe rellenar la información porque es obligatoria. Si no la rellena no avanza.</p>
                 </span>
             <h3><a href="javascript: void(0);" onClick="toggle('menu530')">5.3. Select</h3></a>
                 <span id="menu530" style="display:none;">
                     <p><b>Select</b> permite crear una lista para seleccionar varias opciones. Sirve de contenedor para la etiqueta <b>option</b>, la cual muestra los valores de la lista que crea <b>select</b>. Sin embargo, se debe usar más la opción <b>datalist</b> que <b>select</b>, ya que <b>datalist</b> junto a <b>input</b> con el <b>atributo list</b> le permite al usuario buscar en caso de que la lista sea muy larga.</p>
-                    <div class="code">
-                        <code>
-                        |< select name="" id=""> </br>
-                        |    |< option value="JavaScript"> Curso de JavaScript < /option> </br>
-                        |    |< option value="HTML5"> Curso de HTML5 < /option> </br>
-                        |    |< option value="CSS3"> Curso de CSS3 < /option> </br>
-                        |    |< option value="Web Standars"> Curso de Web Standars < /option> </br>
-                        |< /select> </br>
-                        |      </br>
-                        |< !-- Con buenas prácticas -> Le das una opción para que busque </br>
-                        |      </br>
-                        |< input list="cursos"> </br>
-                        |< datalist id="cursos"> </br>
-                        |    |< option value="JavaScript"> Curso de JavaScript < /option> </br>
-                        |    |< option value="HTML5"> Curso de HTML5 < /option> </br>
-                        |    |< option value="CSS3"> Curso de CSS3 < /option> </br>
-                        |    |< option value="Web Standars"> Curso de Web Standars < /option> </br>
-                        |< /datalist> </br> 
-                        </code>
-                    </div>
+
+                    <pre class="language-html line-numbers match-braces" data-start="1"><code> 
+                    &#x3C;select name=&#x22;&#x22; id=&#x22;&#x22;&#x3E;
+                            &#x3C;option value=&#x22;JavaScript&#x22;&#x3E; Curso de JavaScript &#x3C;/option&#x3E;
+                            &#x3C;option value=&#x22;HTML5&#x22;&#x3E; Curso de HTML5 &#x3C;/option&#x3E;
+                            &#x3C;option value=&#x22;CSS3&#x22;&#x3E; Curso de CSS3 &#x3C;/option&#x3E;
+                            &#x3C;option value=&#x22;Web Standars&#x22;&#x3E; Curso de Web Standars &#x3C;/option&#x3E;
+                        &#x3C;/select&#x3E; &#x3C;/br&#x3E;
+                        &#x3C;!-- Con buenas pr&#xE1;cticas Le das una opci&#xF3;n para que busque --&#x3E;
+                        &#x3C;input list=&#x22;cursos&#x22;&#x3E;
+                        &#x3C;datalist id=&#x22;cursos&#x22;&#x3E;
+                            &#x3C;option value=&#x22;JavaScript&#x22;&#x3E; Curso de JavaScript &#x3C;/option&#x3E;
+                            &#x3C;option value=&#x22;HTML5&#x22;&#x3E; Curso de HTML5 &#x3C;/option&#x3E;
+                            &#x3C;option value=&#x22;CSS3&#x22;&#x3E; Curso de CSS3 &#x3C;/option&#x3E;
+                            &#x3C;option value=&#x22;Web Standars&#x22;&#x3E; Curso de Web Standars &#x3C;/option&#x3E;
+                        &#x3C;/datalist&#x3E; 
+                    </code></pre>
                 </span>
             <h3><a href="javascript: void(0);" onClick="toggle('menu540')">5.4. Input type submit vs Button Tag</h3></a>
                 <span id="menu540" style="display:none;">
                     <p>En HTML5 se pueden crear dos tipos de botones, con input y con button.</p>
-                        <div class="code">
-                            <code>
-                            |< body> </br>
-                            |    |< input type="submit" value="Nombre" /> </br>
-                            |    |< button> Enviar < /button> </br>
-                            |< /body> </br>
-                            </code>
-                        </div>
+                    <pre class="language-html line-numbers match-braces" data-start="1"><code> 
+                    &#x3C;body&#x3E;
+                        &#x3C;input type=&#x22;submit&#x22; value=&#x22;Nombre&#x22;/&#x3E;
+                        &#x3C;button&#x3E; Enviar &#x3C;/button&#x3E;
+                    &#x3C;/body&#x3E;
+                    </code></pre>    
                     <p>Básicamente, deberíamos usarlos así:</p>
                     <p><b>input para formularios.</b></p>
                     <p><b>button para otro tipo de botones.</b></p>
                     <p>*El atributo <b>value</b> permite personalizar el texto de un input de tipo submit.</p>
                 </span>
         </span>
-     
-
-    <!-- CSS -->       
     <h2><a href="javascript: void(0);" onClick="toggle('menu600')">6. CSS</h2></a>
         <span id="menu600" style="display:none;" >
             <h3><a href="javascript: void(0);" onClick="toggle('menu610')">6.1. Qué es?</h3></a>
@@ -420,90 +409,79 @@
                 </span>
             <h3><a href="javascript: void(0);" onClick="toggle('menu620')">6.2. Anatomía de una regla CSS</h3></a>
                 <span id="menu620" style="display:none;">
-                    <img class="imagen" src="./images/anatomia-css.png">
+                    <img class="cursoHC-imagen" src="./images/anatomia-css.png">
                     <h4><a href="javascript: void(0);" onClick="toggle('menu621')">6.2.1. Cómo usamos CSS? por selector, clase y/o IDs</h4></a>
                         <span id="menu621" style="display:none;">
                             <p>Para añadir CSS a nuestro archivo HTML existen 3 formas:</p>
                             <ol>
                                 <li>Link externo</li>
-                                <div class="code">
-                                    <code>
-                                        |< head> </br>
-                                        |    |< meta charset="UTF-8" /> </br>
-                                        |    |< meta name="viewport" content="width=device-width, initial-scale=1.0" /> </br>
-                                        |    |< link rel="stylesheet" href="./css/style.css" /> </br>
-                                        |< /head> </br>
-                                    </code>
-                                </div></br>    
+                                <pre class="language-html line-numbers match-braces" data-start="1"><code> 
+                                &#x3C;head&#x3E;
+                                    &#x3C;meta charset=&#x22;UTF-8&#x22;/&#x3E;
+                                    &#x3C;meta name=&#x22;viewport&#x22; content=&#x22;width=device-width, initial-scale=1.0&#x22;/&#x3E;
+                                    &#x3C;link rel=&#x22;stylesheet&#x22; href=&#x22;./css/style.css&#x22;/&#x3E;
+                                &#x3C;/head&#x3E;
+                                </code></pre>
                                 <li>Se puede agregar como estilo embebido a una etiqueta HTML.</li>
-                                <div class="code" >
-                                    <code>
-                                    < a style="color: white"> </br>
-                                    </code>
-                                </div>
+                                <pre class="language-html line-numbers match-braces" data-start="1"><code> 
+                                &#x3C;a style=&#x22;color: red&#x22;&#x3E;
+                                </code></pre>
                                 <li>Agregar los estilos dentro de la etiqueta <b>head</b></li>
-                                <div class="code">
-                                    &#x3C;head&#x3E; <br>
-                                    &#x3C;meta charset=&#x22;UTF-8&#x22;/&#x3E; <br>
-                                    &#x3C;meta name=&#x22;viewport&#x22; content=&#x22;width=device-width, initial-scale=1.0&#x22;/&#x3E; <br>
-                                    &#x3C;link rel=&#x22;stylesheet&#x22; href=&#x22;./css/style.css&#x22;/&#x3E; <br>
-                                    &#x3C;title&#x3E;Pseudo Clase y Pseudo Elementos &#x3C;/title&#x3E; <br>
-                                    &#x3C;style&#x3E; <br>
-                                    body { <br>
-                                        background-color: black; <br>
-                                        } <br>
-                                    &#x3C;/style&#x3E; <br>
-                                    &#x3C;/head&#x3E; <br>
-                                    </code>
-                                </div>
+                                <pre class="language-html line-numbers match-braces" data-start="1"><code> 
+                                &#x3C;head&#x3E; <br>
+                                &#x3C;meta charset=&#x22;UTF-8&#x22;/&#x3E; <br>
+                                &#x3C;meta name=&#x22;viewport&#x22; content=&#x22;width=device-width, initial-scale=1.0&#x22;/&#x3E; <br>
+                                &#x3C;link rel=&#x22;stylesheet&#x22; href=&#x22;./css/style.css&#x22;/&#x3E; <br>
+                                &#x3C;title&#x3E;Pseudo Clase y Pseudo Elementos &#x3C;/title&#x3E; <br>
+                                &#x3C;style&#x3E; <br>
+                                body { <br>
+                                    background-color: grey; <br>
+                                    } <br>
+                                &#x3C;/style&#x3E; <br>
+                                &#x3C;/head&#x3E; <br>
+                                </code></pre>
                                 <p>Para agregar estilos a una etiqueta de HTML usamos clases y IDs. Siendo las clases las más importantes para elementos generales y los IDs para elementos específicos (Son más recomendados para JavaScript) Ejemplo de usos de estilos con clases:</p>
-                                <div class="code">
-                                    <code>
-                                        |< nav> </br>
-                                        |    |< ul id="main-nav" class="nav"> </br>
-                                        |    |    |< li> < a href="">Home < /a> < /li> </br>
-                                        |    |    |< li> < a href="">Cursos < /a> < /li> </br>
-                                        |    |    |< li> < a href="">Instructores < /a> < /li> </br>
-                                        |    |    |< li> < a href="" class="blog">Blog < /a> < /li> </br>
-                                        |    |< /ul> </br>
-                                        |< /nav> </br>
-                                    </code>
-                                </div>
-                                <div class="code">
-                                    <code>
-                                    |.nav {</br>
-                                    |    |margin-top: 10px; </br>
-                                    |    |list-style: none; </br>
-                                    |    |padding-left: 0; </br>
-                                    |    |} </br>
-                                    |     </br>
-                                    |.nav li {</br>
-                                    |    |display: inline-block; </br>
-                                    |    |} </br>
-                                    |     </br>
-                                    |.nav a {</br>
-                                    |    |color: white; </br>
-                                    |    |background-color: #13a4a4; </br>
-                                    |    |padding: 5px; </br>
-                                    |    |border-radius: 2px; </br>
-                                    |    |text-decoration: none; </br>
-                                    |    |} </br>
-                                    |     </br>
-                                    |.nav .blog {</br>
-                                    |    |background-color: red; </br>
-                                    |    |} </br>
-                                    |     </br>
-                                    </code>
-                                </div>
+                                <pre class="language-css line-numbers match-braces" data-start="1"><code> 
+                                .nav {
+                                        margin-top: 10px; 
+                                        list-style: none; 
+                                        padding-left: 0; 
+                                        } 
+                                         
+                                    .nav li {
+                                        display: inline-block; 
+                                        } 
+                                         
+                                    .nav a {
+                                        color: white; 
+                                        background-color: #13a4a4; 
+                                        padding: 5px; 
+                                        border-radius: 2px; 
+                                        text-decoration: none; 
+                                        } 
+                                         
+                                    .nav .blog {
+                                        background-color: red; 
+                                        } 
+                                </code></pre>
+                                <pre class="language-html line-numbers match-braces" data-start="1"><code> 
+                                &#x3C;nav&#x3E;
+                                    &#x3C;ul id=&#x22;main-nav&#x22; class=&#x22;nav&#x22;&#x3E;
+                                        &#x3C;li&#x3E; &#x3C;a href=&#x22;&#x22;&#x3E;Home&#x3C;/a&#x3E;&#x3C;/li&#x3E;
+                                        &#x3C;li&#x3E; &#x3C;a href=&#x22;&#x22;&#x3E;Cursos&#x3C;/a&#x3E;&#x3C;/li&#x3E;
+                                        &#x3C;li&#x3E; &#x3C;a href=&#x22;&#x22;&#x3E;Instructores&#x3C;/a&#x3E;&#x3C;/li&#x3E;
+                                        &#x3C;li&#x3E; &#x3C;a href=&#x22;&#x22; class=&#x22;blog&#x22;&#x3E;Blog&#x3C;/a&#x3E;&#x3C;/li&#x3E;
+                                    &#x3C;/ul&#x3E;
+                                &#x3C;/nav&#x3E;
+                                </code></pre>
                                 <p>Para este curso usaremos la metodología BEM la cual nos ayuda a generar clases a elementos de HTML de una manera más ordenada y específica. BEM usa esta sintaxis:</p>
-                                <div class="code">
-                                    <code>
-                                    .main </br>
-                                    .main-nav </br>
-                                    .main-nav__item </br>
-                                    .main-nav__item a </br>
-                                    </code>
-                                </div>
+                                
+                                <pre class="language-css line-numbers match-braces" data-start="1"><code> 
+                                .main
+                                .main-nav
+                                .main-nav__item
+                                .main-nav__item a
+                                </code></pre>
                             </ol>
                         </span>
                 </span>
@@ -530,14 +508,14 @@
                         </code>
                     </div>
                     <p>Lista de pseudo-elementos:</p>
-                    <a href="https://developer.mozilla.org/es/docs/Web/CSS/Pseudoelementos" target="_blank">https://developer.mozilla.org/es/docs/Web/CSS/Pseudoelementos</a>
+                    <p><a href="https://developer.mozilla.org/es/docs/Web/CSS/Pseudoelementos" target="_blank">https://developer.mozilla.org/es/docs/Web/CSS/Pseudoelementos</a></p>
                     <p>:active → Pseudo clase que se activa cuando un elemento recibe el evento click.</p>
                     <p>::after → Pseudo elemento que agrega algo (texto, número, figuras) delante del elemento HTML especificado.</p>
                     <ul>
                         <li>En los proyectos casi siempre se trabaja una hoja de estilos por página. Por lo general el nombre del archivo de estilos es el mismo nombre de la página.</li>
                         <li>propiedad <b>content</b> → Agrega contenido (texto) a un elemento especificado.</li>
                     </ul>
-                    <img class="imagen" src="./images/pseudo-clases-3.png">
+                    <img class="cursoHC-imagen" src="./images/pseudo-clases-3.png">
                 </span>
             <h3><a href="javascript: void(0);" onClick="toggle('menu640')">6.4. Modelo de caja</h3></a>
                 <span id="menu640" style="display:none;">
@@ -582,7 +560,7 @@
                     <p>Donde a <b>!important</b> e <b>inline styles</b> debemos evitarlos las mayorías de veces ya que son mala práctica. Siempre debemos tratar de usar las clases.</p>
                     <p>En cuanto al orden de las fuentes:</p>
                     <p>Si se mandan a llamar unos estilos arriba y otros abajo (los dos con la misma clase) los últimos llamados sobrescribirán a los primeros, porque tal como su nombre lo indica, los estilos CSS se leen en cascada y guarda los últimos cambios/valores que lee. (Este es un caso muy extremo)</p>
-                    <img class="imagen" src="./images/especifidad.jpg">
+                    <img class="cursoHC-imagen" src="./images/especifidad.jpg">
                     <p><b>Calculadora de peso de especificidad:</b></p>
                     <p><a href="https://www.codecaptain.io/tools/css-specificity-calculator" target="_blank">https://www.codecaptain.io/tools/css-specificity-calculator</a></p>
                     
@@ -688,7 +666,7 @@
                         <li><b>Static:</b> Es la que viene por defecto. El elemento se queda donde fue ubicado en el código y de ahí no se mueve.</li>
                         <li><b>Absolute:</b> Esta posición le indica al elemento que se debe borrar del flujo normal de la página. Esto causará que el elemento quede por encima de los demás y deje de ocupar su espacio.</li>
                         <li><b>Relative:</b> Esta posición es considerada una "normal" porque se ubica en con respecto a su posición original. Esto causará que el elemento siga ocupando su espacio a pesar de que no esté ubicado allí.</li>
-                        <img class="imagen" src="./images/position.png">
+                        <img class="cursoHC-imagen" src="./images/position.png">
                         <li><b>Fixed:</b> Al igual que sticky, sirven para que el contenido se quede en su posición sin importar si se hace o no scroll. <b>Fixed mantiene el efecto desde que se abre la página.</b></li>
                         <li><b>Sticky:</b> Por su parte, sticky empieza a "seguirte" cuando llegues a él mediante el scroll.</li>
                     </ol>
@@ -700,7 +678,7 @@
                         <li><b>inline:</b> Ocupa solo el espacio de su contenido. Lo que permite agruparse unos al lado del otro. No se le puede dar margen ni padding vertical pero sí horizontal. Tampoco se le puede agregar un alto o ancho.</li>
                         <li><b>inline-block:</b> Utiliza el espacio que ocupa el elemento. Solo el que ocupa el elemento, no el 100%.</li>
                     </ul>
-                    <img class="imagen" src="./images/display-block-vs-inline-block.png">
+                    <img class="cursoHC-imagen" src="./images/display-block-vs-inline-block.png">
                 </span>
             <h3><a href="javascript: void(0);" onClick="toggle('menu6150')">6.15. Display Flex</h3></a>
                 <span id="menu6150" style="display:none;">
@@ -711,35 +689,30 @@
                         <li><b>justify-content</b> nos permite alinear los elementos de forma horizontal. <b>align-items</b> hace lo mismo pero verticalmente.</li>
                         <li><b>box-sizing:</b> border-box; → Suma el padding y el borde con el width del elemento. Si aumenta el padding o el borde, el width disminuye para no generar un scroll horizontal. Lo mismo al contrario en caso de que aumente width. Esto se hace para que el elemento ocupe lo que le indicamos y no más.</li>
                     </ul>
-                </span>
-            <h3><a href="javascript: void(0);" onClick="toggle('menu6160')">6.16. Flexbox Layouts</h3></a>
-                <span id="menu6160" style="display:none;">
-                    <div class="code">
-                        <code>
-                        | .container { </br>
-                        |   | border: 0.3rem solid black; </br>
-                        |   | display: flex; </br>
-                        |   | flex-wrap: wrap; </br>
-                        | } </br>
-                        | </br>
-                        | .box { </br>
-                        |   | height: 10rem; </br>
-                        |   | flex-basis: 10rem; </br>
-                        |   | flex-grow: 1; </br>
-                        | } </br>
-                        </code>
-                    </div>    
+                
+                <h4>Flexbox Layouts</h3>
+                    <pre class="language-css line-numbers match-braces" data-start="1"><code> 
+                        .container {
+                            border: 0.3rem solid black;
+                            display: flex;
+                            flex-wrap: wrap;
+                            }
+                        .box {
+                            height: 10rem;
+                            flex-basis: 10rem;
+                            flex-grow: 1;
+                            }
+                    </code></pre>
                     <ul>
                         <li><b>flex-grow</b> → Toma el espacio que sobra para que no haya espacios en blanco. Al darle el valor 1 toma el espacio sobrante que deja otro elemento.</li>
                         <li><b>flex-basis</b> → Define el tamaño que tendrá un elemento antes de que se distribuya al tamaño restante.</li>
                         <li><b>align-items: strech;</b> → Estira los elementos al 100% del valor de su contenedor padre. Ocupa todo el espacio vertical.</li>
-                        <li><b>baselinev</b> → Toma solo el alto de su contenido. Lo limita a su propia altura.</li>
-                        <li><b>order</b> → Cambia el orden de los hijos del contenedor padre.</p>
-                        <p>Todos los contenedores que no tengan orden se pasan para la izquierda. Y los que sí lo tengan empiezan desde donde terminan los que no tienen.</li>
+                        <li><b>align-items: baseline;</b> → Toma solo el alto de su contenido. Lo limita a su propia altura. </li>
+                        <li><b>order</b> → Cambia el orden de los hijos del contenedor padre. Todos los contenedores que no tengan orden se pasan para la izquierda. Y los que sí lo tengan empiezan desde donde terminan los que no tienen.</li>
                     </ul>
                 </span>
-            <h3><a href="javascript: void(0);" onClick="toggle('menu6170')">6.17. Variables</h3></a>
-                <span id="menu6170" style="display:none;">
+            <h3><a href="javascript: void(0);" onClick="toggle('menu6160')">6.16. Variables</h3></a>
+                <span id="menu6160" style="display:none;">
                     <p>Las variables nos permiten guardar un valor para evitar generar mucho código repetido.</p>
                     <div class="code">
                         <code>
@@ -766,10 +739,10 @@
                         </code>
                     </div> 
                 </span>
-            <h3><a href="javascript: void(0);" onClick="toggle('menu6180')">6.18. Web Fonts</h3></a>
-                <span id="menu6180" style="display:none;">
+            <h3><a href="javascript: void(0);" onClick="toggle('menu6170')">6.17. Web Fonts</h3></a>
+                <span id="menu6170" style="display:none;">
                     <p>Las fuentes genéricas son las que vienen por defecto en nuestro sistema operativo y con las cuales se abrirán en un principio todos los sitios web. Algunas de estas son:</p>
-                    <img class="imagen" src="./images/fuentes-genericas.png">
+                    <img class="cursoHC-imagen" src="./images/fuentes-genericas.png">
                     <p>Las fuentes que casi siempre se usan son: </p>
                     <ul>
                         <li>Light 300</li>
@@ -845,7 +818,7 @@
                 </span> <!-- id="menu730" -->
             <h3><a href="javascript: void(0);" onClick="toggle('menu740')">7.4. Column Drop</h3></a>
                 <span id="menu740" style="display:none;">
-                    <img class="imagen" src="./images/column-drop.png">
+                    <img class="cursoHC-imagen" src="./images/column-drop.png">
                 <p>En este patrón se tiene todo de forma vertical pero a la hora de que va creciendo el contenido empieza a arrojar los contenedores y los reposiciona a la línea principal, secundaria, etc... En este no se limita el crecimiento del container porque queremos que se estire por completo, que ocupe todo el ancho de la pantalla.</p>
                 <p><a href="https://developers.google.com/web/fundamentals/design-and-ux/responsive/patterns" target="_blank">Enlace para profundizar en patrones de diseño web adaptable</a></p>
                 </span> <!-- id="menu740" -->
@@ -900,8 +873,15 @@
                     <p>El atributo <b>title</b> puede ser usado en varias etiquetas HTML como <b>img</b> o <b>a</b> y su función es agregar una descripción para cuando el usuario haga hover sobre algún elemento.</p>
                 </span> <!-- id="menu830" -->  
         </span>  <!-- id="menu800" -->
-</div> <!-- Termina class="article" -->
+</div> <!-- Termina class="curso" -->
 </div> <!-- Termina class="container" -->
-</body>
+<footer>
+        <div class="footer">
+        <?php include "./footer.php";?>
+        <div class="c_ph_50 c_tb_50 c_sc_50 c_bsc_50" align="center">
+            <p><a href="#TituloPagina">Ir arriba</a></p>
+        </div>
+        <?php include "./copyright.php";?>
+    </footer></body>
 </html>
 
