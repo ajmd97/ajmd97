@@ -47,13 +47,13 @@
 </body>
 </html>
 
-5456784468:AAGCUDJ3ujmSdmMafQu4ALBIm02WdWLHpdE
+
 
   
 
 use Telegram\Bot\Api;
 
-$telegram = new Api('BOT TOKEN');
+$telegram = new Api('5456784468:AAGCUDJ3ujmSdmMafQu4ALBIm02WdWLHpdE');
 
 $response = $telegram->sendMessage([
   'chat_id' => 'CHAT_ID', 
